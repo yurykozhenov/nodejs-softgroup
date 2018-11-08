@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "types" : ["node"],
+        "lib": ["es6"],
+        "target": "es2017",
+        "outDir": "dist"
+    },
+    "include": [
+        "**/*"
+    ]
+}

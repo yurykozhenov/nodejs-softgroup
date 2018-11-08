@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
+import * as fs from 'fs';
+import * as path from 'path';
+import * as util from 'util';
 
 const readFileAsync = util.promisify(fs.readFile);
 const mkdirAsync = util.promisify(fs.mkdir);
@@ -42,7 +42,7 @@ async function generateComponent() {
     ]);
 }
 
-async function createComponentCode(componentName) {
+async function createComponentCode(componentName: string) {
     const angularJsonPath = path.join(__dirname, './angular.json');
 
     let angularJson;
